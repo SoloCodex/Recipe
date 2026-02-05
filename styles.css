@@ -8,7 +8,7 @@ body {
 
 /* Navigation Bar */
 .navbar {
-  background-color: maroon;
+  background-color: #800000;
   padding: 0;
   position: sticky;
   top: 0;
@@ -31,7 +31,28 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 15px 0;
+  display: flex;
+  align-items: center;
 }
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    padding: 10px 0;
+  }
+
+  .logo-img {
+    height: 40px;
+  }
+}
+
+
 
 .nav-menu {
   display: flex;
@@ -221,31 +242,199 @@ body {
   }
 }
 
-.mainpage {
-  background-color: maroon;
+/* Header Section */
+.header-section {
+  background: linear-gradient(135deg, maroon 0%, #8b0000 100%);
   color: white;
+  padding: 40px 20px;
   text-align: center;
-  padding: 60px 20px;
 }
 
-.mainpage h1 {
-  font-size: 3rem;
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-title {
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.site-tagline {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #fcebd7;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 2rem;
+  }
+
+  .site-tagline {
+    font-size: 1rem;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 250px;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* Key Statement Section */
+.key-statement-section {
+  background-color: #fcebd7;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.key-statement-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.key-statement {
+  font-size: 2.5rem;
+  color: maroon;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}
+
+.key-description {
+  font-size: 1.2rem;
+  color: #555;
   margin: 0;
 }
 
 @media (max-width: 768px) {
-  .mainpage h1 {
-    font-size: 2rem;
+  .key-statement {
+    font-size: 1.8rem;
   }
 
-  .mainpage p {
+  .key-description {
     font-size: 1rem;
+    text-align: justify;
+  }
+}
+
+/* Introduction Section */
+.intro-section {
+  background-color: white;
+  padding: 60px 20px;
+  border-bottom: 3px solid #fcebd7;
+}
+
+.intro-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.intro-title {
+  color: maroon;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 3px solid maroon;
+  padding-bottom: 15px;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+}
+
+
+
+@media (max-width: 768px) {
+  .intro-text {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .intro-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Recipes Section Title */
+.recipes-section-title {
+  text-align: center;
+  margin: 50px 0 30px 0;
+}
+
+.recipes-section-title h2 {
+  color: maroon;
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+}
+
+.recipes-section-title p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .recipes-section-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .recipes-section-title p {
+    font-size: 1rem;
+    text-align: justify;
   }
 }
 
 .main-container {
   max-width: 1200px; 
-  margin: 40px auto; 
+  margin: 0 auto; 
   padding: 0 20px;
 }
 
@@ -254,6 +443,7 @@ body {
   flex-wrap: wrap; 
   gap: 30px; 
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .card {
@@ -306,6 +496,7 @@ body {
   padding: 30px;
   background-color: #fcebd7;
   border-radius: 15px;
+  margin-bottom: 60px;
 }
 
 .references h3 {
@@ -330,11 +521,230 @@ body {
   font-weight: bold;
 }
 
-footer {
+/* Footer Section */
+.footer-section {
+  background-color: maroon;
+  color: white;
+  padding: 50px 20px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-info h3,
+.footer-developer h4,
+.footer-contact h4,
+.footer-social h4 {
+  color: #fcebd7;
+  margin: 0 0 15px 0;
+  font-size: 1.2rem;
+}
+
+.footer-info p,
+.footer-developer p,
+.footer-contact p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.footer-contact a {
+  color: #fcebd7;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+  color: #ffffff;
+}
+
+.footer-contact i {
+  margin-right: 10px;
+  color: #fcebd7;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #fcebd7;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fcebd7;
+  border-radius: 50%;
+}
+
+.social-links a:hover {
+  background-color: #fcebd7;
+  color: maroon;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
   text-align: center;
-  padding: 40px;
-  color: #888;
+  padding-top: 20px;
+  border-top: 2px solid rgba(255, 206, 189, 0.3);
+  color: #fcebd7;
   font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  text-align: justify;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-section {
+    padding: 30px 20px 15px 20px;
+  }
+
+  .footer-info,
+  .footer-developer,
+  .footer-contact,
+  .footer-social {
+    text-align: center;
+  }
+
+  .footer-info h3,
+  .footer-developer h4,
+  .footer-contact h4,
+  .footer-social h4 {
+    text-align: center;
+  }
+
+  .footer-contact p {
+    text-align: center;
+  }
+
+  .footer-info p,
+  .footer-developer p {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}
+
+.about-intro {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.intro-statement {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: maroon;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-intro {
+    text-align: center;
+  }
+
+  .intro-statement {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+/* About Purpose Section */
+.about-purpose {
+  margin: 50px 0;
+}
+
+.about-purpose h2 {
+  color: maroon;
+  font-size: 1.8rem;
+  border-bottom: 3px solid maroon;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.about-purpose p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .about-purpose p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .about-purpose h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* About Author Section */
+.about-author {
+  margin: 50px 0;
+  padding: 30px;
+  background-color: #fcebd7;
+  border-radius: 15px;
+  border-left: 5px solid maroon;
+}
+
+.about-author h2 {
+  color: maroon;
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-author p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .about-author {
+    padding: 20px;
+  }
+
+  .about-author h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-author p {
+    font-size: 1rem;
+    text-align: justify;
+  }
 }
 
 /* Page Content */
@@ -350,6 +760,10 @@ footer {
 @media (max-width: 768px) {
   .page-content {
     padding: 20px;
+  }
+
+  .page-content p {
+    text-align: justify;
   }
 }
 
@@ -372,6 +786,7 @@ footer {
 @media (max-width: 768px) {
   .page-content p, .page-content li {
     font-size: 1rem;
+    text-align: justify;
   }
 }
 
@@ -382,12 +797,16 @@ footer {
   padding: 30px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 60px auto;
 }
 
 @media (max-width: 768px) {
   .recipe-detail {
     padding: 20px;
+  }
+
+  .recipe-detail p {
+    text-align: justify;
   }
 }
 
@@ -438,6 +857,12 @@ footer {
 
 .ingredients li, .instructions li {
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .ingredients li, .instructions li {
+    text-align: justify;
+  }
 }
 
 .recipe-detail h3:not(.ingredients h3):not(.instructions h3) {
@@ -514,4 +939,546 @@ footer {
 
 .back-link:hover {
   color: #8b0000;
+}
+
+/* Contact Page Styles */
+
+/* Contact Intro Section */
+.contact-intro {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.contact-statement {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: maroon;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-intro {
+    text-align: center;
+  }
+
+  .contact-statement {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+/* Contact Methods Section */
+.contact-methods {
+  margin: 50px 0;
+}
+
+.contact-methods h2 {
+  color: maroon;
+  font-size: 2rem;
+  border-bottom: 3px solid maroon;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-direct {
+  background-color: #fcebd7;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  border-left: 5px solid maroon;
+}
+
+.contact-direct h3 {
+  color: maroon;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.contact-direct p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+}
+
+.contact-direct a {
+  color: maroon;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contact-direct a:hover {
+  color: #8b0000;
+}
+
+/* Social Links */
+.contact-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  background-color: white;
+  border: 2px solid maroon;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.contact-social-links a:hover {
+  background-color: maroon;
+  color: white;
+}
+
+/* College Info */
+.college-info {
+  background-color: white;
+  border: 2px solid maroon;
+}
+
+.college-details {
+  margin-bottom: 25px;
+}
+
+.college-details h4 {
+  color: maroon;
+  font-size: 1.2rem;
+  margin: 15px 0 10px 0;
+}
+
+.college-details p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* College Map */
+.college-map {
+  margin-top: 25px;
+}
+
+.college-map h4 {
+  color: maroon;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.college-map iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .college-map {
+    margin-top: 20px;
+  }
+
+  .college-map h4 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .college-map iframe {
+    width: 100%;
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .college-map iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-methods h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-direct {
+    padding: 20px;
+  }
+
+  .contact-direct h3 {
+    font-size: 1.1rem;
+  }
+
+  .contact-direct p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .contact-social-links {
+    gap: 10px;
+  }
+
+  .contact-social-links a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .college-details p {
+    text-align: justify;
+  }
+
+  .college-map iframe {
+    height: 250px;
+    
+  }
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  margin: 50px 0;
+  padding: 30px;
+  background-color: #fcebd7;
+  border-radius: 15px;
+}
+
+.contact-form-section h2 {
+  color: maroon;
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: maroon;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid maroon;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: white;
+  color: #333;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #8b0000;
+  box-shadow: 0 0 8px rgba(128, 0, 0, 0.3);
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: maroon;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #8b0000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .contact-form-section {
+    padding: 20px;
+  }
+
+  .contact-form-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-group label {
+    font-size: 0.95rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1rem;
+  }
+
+  .submit-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Recipe Page Styles */
+
+.recipe-detail {
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 40px auto 60px auto;
+}
+
+.recipe-detail img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.recipe-detail h2 {
+  color: maroon;
+  border-bottom: 3px solid maroon;
+  padding-bottom: 15px;
+  margin: 30px 0 20px 0;
+  font-size: 2rem;
+}
+
+.recipe-description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  font-style: italic;
+  padding: 15px;
+  background-color: #fcebd7;
+  border-radius: 10px;
+}
+
+/* Recipe Info Section */
+.recipe-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+  background-color: #fcebd7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+.info-item i {
+  font-size: 1.5rem;
+  color: maroon;
+}
+
+.info-item strong {
+  color: maroon;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.info-item p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Ingredients Section */
+.ingredients,
+.instructions {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #fff9f5;
+  border-left: 5px solid maroon;
+  border-radius: 10px;
+}
+
+.ingredients h3,
+.instructions h3 {
+  color: maroon;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ingredients h3 i,
+.instructions h3 i {
+  font-size: 1.3rem;
+}
+
+.ingredients ul,
+.instructions ol {
+  line-height: 2;
+  font-size: 1rem;
+  margin: 0;
+  padding-left: 25px;
+  color: #555;
+}
+
+.ingredients li,
+.instructions li {
+  margin-bottom: 12px;
+}
+
+/* Cooking Tips */
+.cooking-tips {
+  margin: 40px 0;
+  padding: 25px;
+  background: linear-gradient(135deg, #fcebd7 0%, #fff9f5 100%);
+  border-radius: 10px;
+  border-left: 5px solid #ff9800;
+}
+
+.cooking-tips h3 {
+  color: maroon;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cooking-tips h3 i {
+  color: #ff9800;
+}
+
+.cooking-tips p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Back Link */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+  padding: 12px 20px;
+  background-color: maroon;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.back-link:hover {
+  background-color: #8b0000;
+  transform: translateX(-5px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .recipe-detail {
+    padding: 20px;
+    margin: 20px 0 40px 0;
+  }
+
+  .recipe-detail img {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .recipe-detail h2 {
+    font-size: 1.5rem;
+    margin: 20px 0 15px 0;
+  }
+
+  .recipe-description {
+    font-size: 1rem;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+
+  .recipe-info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .info-item {
+    gap: 10px;
+  }
+
+  .ingredients,
+  .instructions {
+    margin: 25px 0;
+    padding: 15px;
+  }
+
+  .ingredients h3,
+  .instructions h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .ingredients ul,
+  .instructions ol {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .ingredients li,
+  .instructions li {
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  .cooking-tips {
+    margin: 25px 0;
+    padding: 15px;
+  }
+
+  .cooking-tips h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .cooking-tips p {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  .back-link {
+    margin-top: 30px;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+  }
 }

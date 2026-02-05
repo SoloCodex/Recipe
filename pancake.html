@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pancake Recipe | Food Recipes</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pancakes Recipe | Home Foodie Hub</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
+  <!-- Header (same as index.html) -->
   <nav class="navbar">
     <div class="nav-container">
-      <div class="logo">Food Recipes</div>
+      <div class="logo">
+        <img src="HomeFoodieHubLogo.png" alt="Home Foodie Hub " class="logo-img"> HomeFoodieHub
+      </div>
       <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -28,15 +31,15 @@
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
       <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </div>
     </div>
   </nav>
 
+  <!-- Mobile Menu -->
   <div class="mobile-menu">
     <a href="index.html">Home</a>
+    <a href="about.html">About</a>
     <div class="mobile-recipes-dropdown">
       <a href="#">Recipes</a>
       <div class="mobile-dropdown-content">
@@ -47,68 +50,128 @@
         <a href="scrambledeggs.html">Scrambled Eggs</a>
       </div>
     </div>
-    <a href="about.html">About</a>
     <a href="contact.html">Contact Us</a>
   </div>
 
-  <div class="mainpage">
-    <h1>Pancakes</h1>
-    <p>Fluffy & Delicious Breakfast Favorite</p>
-  </div>
-
-  <div class="main-container">
-    <div class="recipe-detail">
-      <img src="https://imgs.search.brave.com/wBAk5sJiTJtnrjJWRmclSzen5vbIzU3FJ8HK9ssOp38/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YWxscmVjaXBlcy5j/b20vdGhtYi95d3JP/RFpOVlg2U0RkeUEz/WHFrZ2VxQkYxTTQ9/LzE1MDB4MC9maWx0/ZXJzOm5vX3Vwc2Nh/bGUoKTptYXhfYnl0/ZXMoMTUwMDAwKTpz/dHJpcF9pY2MoKS8y/MTAxNC1nb29kLW9s/ZC1mYXNoaW9uZWQt/cGFuY2FrZXMtVkFU/LTAwNC00eDMtMDIt/ZDZjZTNiNjFkZWY4/NDBmY2FmNDBhNDNm/ODA1YjczM2UuanBn" alt="Pancakes">
-
-      <h2>Classic Fluffy Pancakes</h2>
-      <p><strong>Prep Time:</strong> 10 minutes | <strong>Cook Time:</strong> 15 minutes | <strong>Servings:</strong> 4 (12 pancakes)</p>
-
-      <div class="ingredients">
-        <h3>Ingredients</h3>
-        <ul>
-          <li>2 cups all-purpose flour</li>
-          <li>2 tbsp granulated sugar</li>
-          <li>2 tsp baking powder</li>
-          <li>1 tsp salt</li>
-          <li>2 cups milk</li>
-          <li>2 large eggs</li>
-          <li>4 tbsp butter, melted</li>
-          <li>1 tsp vanilla extract</li>
-          <li>Butter or oil for cooking</li>
-          <li>Maple syrup and fresh berries for topping</li>
-        </ul>
-      </div>
-
-      <div class="instructions">
-        <h3>Instructions</h3>
-        <ol>
-          <li>In a large bowl, whisk together flour, sugar, baking powder, and salt.</li>
-          <li>In another bowl, combine milk, eggs, melted butter, and vanilla extract.</li>
-          <li>Pour wet ingredients into dry ingredients and stir until just combined. Do not overmix; lumps are okay!</li>
-          <li>Heat a non-stick skillet or griddle over medium-high heat and lightly grease with butter or oil.</li>
-          <li>Pour about 1/4 cup batter onto the hot skillet for each pancake.</li>
-          <li>Cook until bubbles form on the surface and edges look set (about 2-3 minutes).</li>
-          <li>Flip pancakes and cook the other side until golden brown (about 1-2 minutes).</li>
-          <li>Transfer cooked pancakes to a plate and keep warm.</li>
-          <li>Serve with maple syrup, fresh berries, whipped cream, or your favorite toppings.</li>
-        </ol>
-      </div>
-
-      <h3>Tips</h3>
-      <p>
-        For extra fluffy pancakes, let the batter rest for 5 minutes before cooking. Don't press down on pancakes while cooking—just let them cook naturally! 
-        You can also add chocolate chips, blueberries, or banana slices to the batter for variation.
-      </p>
-
-      <a href="index.html" class="back-link">← Back to Home</a>
+  <!-- Page Header -->
+  <div class="header-section">
+    <div class="header-content">
+      <h1 class="site-title">Home Foodie Hub</h1>
+      <p class="site-tagline">Your Gateway to Homemade Food Excellence</p>
     </div>
   </div>
 
-  <footer>
-    <p>Created by Mark Angelo Tadeo &copy; 2026</p>
+  <!-- Recipe Content -->
+  <div class="recipe-detail">
+    <img src="https://imgs.search.brave.com/wBAk5sJiTJtnrjJWRmclSzen5vbIzU3FJ8HK9ssOp38/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YWxscmVjaXBlcy5j/b20vdGhtYi95d3JP/RFpOVlg2U0RkeUEz/WHFrZ2VxQkYxTTQ9/LzE1MDB4MC9maWx0/ZXJzOm5vX3Vwc2Nh/bGUoKTptYXhfYnl0/ZXMoMTUwMDAwKTpz/dHJpcF9pY2MoKS8y/MTAxNC1nb29kLW9s/ZC1mYXNoaW9uZWQt/cGFuY2FrZXMtVkFU/LTAwNC00eDMtMDIt/ZDZjZTNiNjFkZWY4/NDBmY2FmNDBhNDNm/ODA1YjczM2UuanBn" alt="Pancakes">
+    
+    <h2>Classic Fluffy Pancakes</h2>
+    <p class="recipe-description">Light, fluffy, and delicious pancakes that are perfect for breakfast or brunch. These homemade pancakes are easy to make and guaranteed to impress your family with their soft, airy texture and golden-brown exterior.</p>
+
+    <div class="recipe-info">
+      <div class="info-item">
+        <i class="fas fa-clock"></i>
+        <div>
+          <strong>Prep Time</strong>
+          <p>10 minutes</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-fire"></i>
+        <div>
+          <strong>Cook Time</strong>
+          <p>15 minutes</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-users"></i>
+        <div>
+          <strong>Servings</strong>
+          <p>4-6 pancakes</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-star"></i>
+        <div>
+          <strong>Difficulty</strong>
+          <p>Easy</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ingredients">
+      <h3><i class="fas fa-list"></i> Ingredients</h3>
+      <ul>
+        <li>1 1/2 cups all-purpose flour</li>
+        <li>3 1/2 teaspoons baking powder</li>
+        <li>1 teaspoon salt</li>
+        <li>1 tablespoon white sugar</li>
+        <li>1 1/4 cups milk</li>
+        <li>1 egg</li>
+        <li>3 tablespoons butter, melted</li>
+        <li>Oil for cooking</li>
+        <li>Maple syrup for serving</li>
+        <li>Fresh berries (optional)</li>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h3><i class="fas fa-utensils"></i> Instructions</h3>
+      <ol>
+        <li>In a large bowl, sift together flour, baking powder, salt, and sugar.</li>
+        <li>Make a well in the center and pour in milk, egg, and melted butter. Stir until just combined (lumps are okay).</li>
+        <li>Heat a non-stick skillet or griddle over medium-high heat. Lightly oil the surface.</li>
+        <li>Pour 1/4 cup of batter onto the skillet for each pancake.</li>
+        <li>Cook until bubbles form on the surface, about 2-3 minutes, then flip and cook for another 1-2 minutes until golden brown.</li>
+        <li>Transfer to a serving plate and keep warm.</li>
+        <li>Repeat with remaining batter.</li>
+        <li>Serve warm with maple syrup and your favorite toppings.</li>
+      </ol>
+    </div>
+
+    <div class="cooking-tips">
+      <h3><i class="fas fa-lightbulb"></i> Cooking Tips</h3>
+      <p>Don't overmix the batter—lumps are actually good for fluffy pancakes! For extra fluffiness, separate the egg and fold in the beaten egg white at the end. You can add vanilla extract, chocolate chips, or blueberries to the batter for variation. Keep cooked pancakes warm in a 200°F oven while cooking the rest.</p>
+    </div>
+
+    <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+  </div>
+
+  <!-- Footer (same as index.html) -->
+  <footer class="footer-section">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>HomeFoodieHub</h3>
+        <p>Your destination for simple and delicious home-cooked recipes.</p>
+      </div>
+
+      <div class="footer-developer">
+        <h4>Web Developer</h4>
+        <p><strong>Mark Angelo S. Tadeo</strong></p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Information</h4>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:markangelotadeo@gmail.com">markangelotadeo@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+639858440089">+63 985 844 0089</a></p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 HomeFoodieHub. All rights reserved. | Developed by Mark Angelo S. Tadeo</p>
+    </div>
   </footer>
 
   <script src="main.js"></script>
 </body>
-
 </html>

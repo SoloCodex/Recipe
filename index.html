@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Recipes | Home</title>
+  <title>HomeFoodieHub | Discover Delicious Recipes</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
   <nav class="navbar">
     <div class="nav-container">
-      <div class="logo">Food Recipes</div>
+      <div class="logo">
+        <img src="HomeFoodieHubLogo.png" alt="HomeFoodieHub Logo" class="logo-img"> HomeFoodieHub
+      </div>
       <ul class="nav-menu">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -22,7 +25,7 @@
             <a href="pancake.html">Pancakes</a>
             <a href="fruitsalad.html">Fruit Salad</a>
             <a href="chickenadobo.html">Chicken Adobo</a>
-            <a href="scrambledEggs.html">Scrambled Eggs</a>
+            <a href="scrambledeggs.html">Scrambled Eggs</a>
           </div>
         </li>
         <li><a href="contact.html">Contact Us</a></li>
@@ -44,20 +47,63 @@
         <a href="pancake.html">Pancakes</a>
         <a href="fruitsalad.html">Fruit Salad</a>
         <a href="chickenadobo.html">Chicken Adobo</a>
-        <a href="scrambledEggs.html">Scrambled Eggs</a>
+        <a href="scrambledeggs.html">Scrambled Eggs</a>
       </div>
     </div>
     <a href="about.html">About</a>
     <a href="contact.html">Contact Us</a>
   </div>
 
-  <div class="mainpage">
-    <h1>Food Recipes</h1>
-    <p>Discover Simple & Delicious Home-Cooked Meals</p>
+  <!-- Header Section -->
+  <div class="header-section">
+    <div class="header-content">
+      <h1 class="site-title">Home Foodie Hub</h1>
+      <p class="site-tagline">Your Gateway to Homemade Food Excellence</p>
+    </div>
   </div>
 
+  <!-- Center Visual Content - Video -->
+  <div class="hero-section">
+    <video class="hero-video" autoplay muted loop>
+      <source src="https://www.pexels.com/download/video/4253148/" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay">
+      <h2 class="hero-text">Taste the Magic of Home Cooking</h2>
+    </div>
+  </div>
+
+  <!-- Key Statement Section -->
+  <div class="key-statement-section">
+    <div class="key-statement-container">
+      <h2 class="key-statement">Simple Recipes, Extraordinary Flavors</h2>
+      <p class="key-description">Transform your kitchen into a culinary haven with our easy-to-follow recipes and cooking tips.</p>
+    </div>
+  </div>
+
+  <!-- Introduction Section -->
+  <div class="intro-section">
+    <div class="intro-container">
+      <h3 class="intro-title">Welcome to HomeFoodieHub</h3>
+      <p class="intro-text">
+        Home foodie hub is your ultimate destination for discovering simple, delicious, and easy-to-follow home-cooked meals from around the world. 
+        Whether you're a beginner in the kitchen or an experienced home cook, we provide comprehensive recipes with clear instructions, 
+        helpful tips, and ingredient lists to ensure your cooking success. Our carefully curated collection features both traditional favorites 
+        and modern twists on classic dishes, all designed to bring joy and satisfaction to your dining table. From simple basic dishes 
+        to comforting extraordinary Filipino classics, fresh and healthy salads to quick breakfast options, you'll find recipes that suit every taste and occasion. 
+        Discover the pleasure of homemade cooking and create memorable meals that your family and friends will love.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Container with Recipe Grid -->
   <div class="main-container">
     
+    <div class="recipes-section-title">
+      <h2>Featured Recipes</h2>
+      <p>Explore our delicious collection of tried-and-tested recipes</p>
+    </div>
+
     <div class="recipe-grid">
 
       <a href="spaghetti.html" class="card">
@@ -108,12 +154,55 @@
 
   </div>
 
-  <footer>
-    <p>Created by Mark Angelo Tadeo &copy; 2026</p>
+  <!-- Footer Section with Developer Info -->
+  <footer class="footer-section">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>HomeFoodieHub</h3>
+        <p>Your destination for simple and delicious home-cooked recipes.</p>
+      </div>
+      
+      <div class="footer-developer">
+        <h4>Web Developer</h4>
+        <p><strong>Mark Angelo S. Tadeo</strong></p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Information</h4>
+        <p>
+          <i class="fas fa-envelope"></i> 
+          <a href="mailto:markangelotadeo@gmail.com">markangelotadeo@gmail.com</a>
+        </p>
+        <p>
+          <i class="fas fa-phone"></i> 
+          <a href="tel:+639858440089">+63 985 844 0089</a>
+        </p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/markangelosamson21" target="_blank" title="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com" target="_blank" title="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 HomeFoodieHub. All rights reserved. | Developed by Mark Angelo S. Tadeo</p>
+    </div>
   </footer>
 
   <script src="main.js"></script>
 </body>
-
 </html>
-

@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spaghetti Recipe | Food Recipes</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spaghetti Recipe | Home Foodie Hub</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
+  <!-- Header (same as index.html) -->
   <nav class="navbar">
     <div class="nav-container">
-      <div class="logo">Food Recipes</div>
+      <div class="logo">
+        <img src="HomeFoodieHubLogo.png" alt="Home Foodie Hub" class="logo-img"> HomeFoodieHub
+      </div>
       <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -28,15 +31,15 @@
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
       <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </div>
     </div>
   </nav>
 
+  <!-- Mobile Menu -->
   <div class="mobile-menu">
     <a href="index.html">Home</a>
+    <a href="about.html">About</a>
     <div class="mobile-recipes-dropdown">
       <a href="#">Recipes</a>
       <div class="mobile-dropdown-content">
@@ -47,68 +50,124 @@
         <a href="scrambledeggs.html">Scrambled Eggs</a>
       </div>
     </div>
-    <a href="about.html">About</a>
     <a href="contact.html">Contact Us</a>
   </div>
 
-  <div class="mainpage">
-    <h1>Spaghetti</h1>
-    <p>Classic Italian Pasta Dish</p>
-  </div>
+  <!-- Recipe Content -->
+  <div class="recipe-detail">
+    <img src="https://imgs.search.brave.com/u-80K91BVU_ZHD9_FVhpTZVXnbrM-u59_SqZOq-ohkM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bWFyaW9uc2tpdGNo/ZW4uY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzEyL0Zp/bGlwaW5vLVNwYWdo/ZXR0aS0wMi5qcGc" alt="Spaghetti">
+    
+    <h2>Filipino-Style Spaghetti</h2>
+    <p class="recipe-description">A delicious Filipino twist on the classic Italian pasta dish. This sweet and savory spaghetti is perfect for gatherings and family meals. The combination of ground meat, tomato sauce, and cheese creates an unforgettable flavor.</p>
 
-  <div class="main-container">
-    <div class="recipe-detail">
-      <img src="https://imgs.search.brave.com/3qdkmSfLCjN3FibNV_8QNaqYXvpGlUDE4_QZI2jR9fw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVsenky/LmNvbS9zeXN0ZW0v/cmVzb3VyY2VzL3Ro/dW1ibmFpbHMvMDY2/LzMzNS85ODYvc21h/bGwvc2VydmluZy1v/Zi1zdGVhbWluZy1z/cGFnaGV0dGktd2l0/aC1zYXVjZS1hbmQt/aGVyYnMtb24td29v/ZGVuLXRhYmxlLWZy/ZWUtcGhvdG8uanBn" alt="Spaghetti">
-
-      <h2>Classic Spaghetti</h2>
-      <p><strong>Prep Time:</strong> 10 minutes | <strong>Cook Time:</strong> 20 minutes | <strong>Servings:</strong> 4</p>
-
-      <div class="ingredients">
-        <h3>Ingredients</h3>
-        <ul>
-          <li>1 lb spaghetti pasta</li>
-          <li>2 tbsp olive oil</li>
-          <li>4 cloves garlic, minced</li>
-          <li>1 can (28 oz) crushed tomatoes</li>
-          <li>1 tsp dried basil</li>
-          <li>1 tsp dried oregano</li>
-          <li>Salt and pepper to taste</li>
-          <li>Parmesan cheese for topping</li>
-          <li>Fresh basil for garnish</li>
-        </ul>
+    <div class="recipe-info">
+      <div class="info-item">
+        <i class="fas fa-clock"></i>
+        <div>
+          <strong>Prep Time</strong>
+          <p>15 minutes</p>
+        </div>
       </div>
-
-      <div class="instructions">
-        <h3>Instructions</h3>
-        <ol>
-          <li>Bring a large pot of salted water to a boil. Add spaghetti and cook until al dente (about 9-10 minutes).</li>
-          <li>Heat olive oil in a large pan over medium heat.</li>
-          <li>Add minced garlic and sauté for about 1 minute until fragrant.</li>
-          <li>Pour in the crushed tomatoes, basil, and oregano. Stir well.</li>
-          <li>Simmer the sauce for 10-15 minutes, stirring occasionally.</li>
-          <li>Season with salt and pepper to taste.</li>
-          <li>Drain the cooked spaghetti and transfer to serving plates.</li>
-          <li>Pour the tomato sauce over the spaghetti and top with Parmesan cheese.</li>
-          <li>Garnish with fresh basil and serve immediately.</li>
-        </ol>
+      <div class="info-item">
+        <i class="fas fa-fire"></i>
+        <div>
+          <strong>Cook Time</strong>
+          <p>20 minutes</p>
+        </div>
       </div>
-
-      <h3>Tips</h3>
-      <p>
-        For a richer sauce, add a splash of heavy cream or a pinch of sugar to balance the acidity of the tomatoes.
-        You can also add ground beef or Italian sausage for a meat sauce variation!
-      </p>
-
-      <a href="index.html" class="back-link">← Back to Home</a>
+      <div class="info-item">
+        <i class="fas fa-users"></i>
+        <div>
+          <strong>Servings</strong>
+          <p>4-6 people</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-star"></i>
+        <div>
+          <strong>Difficulty</strong>
+          <p>Easy</p>
+        </div>
+      </div>
     </div>
+
+    <div class="ingredients">
+      <h3><i class="fas fa-list"></i> Ingredients</h3>
+      <ul>
+        <li>1 pound spaghetti pasta</li>
+        <li>1 pound ground beef or pork</li>
+        <li>1 medium onion, finely chopped</li>
+        <li>4 cloves garlic, minced</li>
+        <li>2 cans (28 oz each) tomato sauce</li>
+        <li>1/4 cup tomato paste</li>
+        <li>2 tablespoons brown sugar</li>
+        <li>1 tablespoon butter</li>
+        <li>Salt and pepper to taste</li>
+        <li>1 cup grated cheddar cheese</li>
+        <li>2 tablespoons all-purpose flour</li>
+        <li>Water as needed</li>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h3><i class="fas fa-utensils"></i> Instructions</h3>
+      <ol>
+        <li>Cook the spaghetti according to package directions. Drain and set aside.</li>
+        <li>In a large pan, heat butter over medium-high heat. Sauté the onion and garlic until fragrant.</li>
+        <li>Add the ground meat and cook until browned, breaking it apart as it cooks. Drain excess fat if needed.</li>
+        <li>Sprinkle flour over the meat and stir well to coat.</li>
+        <li>Add tomato sauce, tomato paste, and brown sugar. Stir until well combined.</li>
+        <li>Simmer for 10-15 minutes, stirring occasionally. Add water if the sauce is too thick.</li>
+        <li>Season with salt and pepper to taste.</li>
+        <li>Combine the cooked spaghetti with the sauce and toss well.</li>
+        <li>Transfer to a serving dish and sprinkle with grated cheddar cheese.</li>
+        <li>Serve hot and enjoy!</li>
+      </ol>
+    </div>
+
+    <div class="cooking-tips">
+      <h3><i class="fas fa-lightbulb"></i> Cooking Tips</h3>
+      <p>For extra flavor, add a pinch of paprika or Italian seasoning to the sauce. You can also add diced bell peppers and carrots to make it more nutritious. If you prefer a sweeter sauce, add more brown sugar to taste. Leftovers can be refrigerated for up to 3 days.</p>
+    </div>
+
+    <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
   </div>
 
-  <footer>
-    <p>Created by Mark Angelo Tadeo &copy; 2026</p>
+  <!-- Footer (same as index.html) -->
+  <footer class="footer-section">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>HomeFoodieHub</h3>
+        <p>Your destination for simple and delicious home-cooked recipes.</p>
+      </div>
+
+      <div class="footer-developer">
+        <h4>Web Developer</h4>
+        <p><strong>Mark Angelo S. Tadeo</strong></p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Information</h4>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:markangelotadeo@gmail.com">markangelotadeo@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+639858440089">+63 985 844 0089</a></p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 HomeFoodieHub. All rights reserved. | Developed by Mark Angelo S. Tadeo</p>
+    </div>
   </footer>
 
   <script src="main.js"></script>
 </body>
-
 </html>
-

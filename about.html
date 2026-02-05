@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Food Recipes</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About | Home Foodie Hub</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
+  <!-- Header (same as index.html) -->
   <nav class="navbar">
     <div class="nav-container">
-      <div class="logo">Food Recipes</div>
+      <div class="logo">
+        <img src="HomeFoodieHubLogo.png" alt="Home Foodie Hub" class="logo-img"> HomeFoodieHub
+      </div>
       <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
@@ -22,21 +25,21 @@
             <a href="pancake.html">Pancakes</a>
             <a href="fruitsalad.html">Fruit Salad</a>
             <a href="chickenadobo.html">Chicken Adobo</a>
-            <a href="scrambledEggs.html">Scrambled Eggs</a>
+            <a href="scrambledeggs.html">Scrambled Eggs</a>
           </div>
         </li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
       <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </div>
     </div>
   </nav>
 
+  <!-- Mobile Menu -->
   <div class="mobile-menu">
     <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
     <div class="mobile-recipes-dropdown">
       <a href="#">Recipes</a>
       <div class="mobile-dropdown-content">
@@ -44,62 +47,79 @@
         <a href="pancake.html">Pancakes</a>
         <a href="fruitsalad.html">Fruit Salad</a>
         <a href="chickenadobo.html">Chicken Adobo</a>
-        <a href="scrambledEggs.html">Scrambled Eggs</a>
+        <a href="scrambledeggs.html">Scrambled Eggs</a>
       </div>
     </div>
-    <a href="about.html" class="active">About</a>
     <a href="contact.html">Contact Us</a>
   </div>
 
-  <div class="mainpage">
-    <h1>About Us</h1>
-    <p>Learn More About Our Recipe Collection</p>
-  </div>
+  
 
-  <div class="main-container">
-    <div class="page-content">
-      <h2>Welcome to Food Recipes</h2>
-      <p>
-        Food Recipes is your go-to destination for simple, delicious, and easy-to-follow home-cooked meals. 
-        We believe that cooking should be enjoyable and accessible to everyone, regardless of skill level.
-      </p>
-      
-      <h3>Our Mission</h3>
-      <p>
-        Our mission is to inspire home cooks to explore new flavors and techniques while providing 
-        straightforward recipes that deliver amazing results. We focus on quality ingredients, 
-        clear instructions, and dishes that bring families together.
-      </p>
+  <main class="page-content">
 
-      <h3>Why Choose Us?</h3>
-      <ul>
-        <li><strong>Simple Recipes:</strong> Easy-to-follow instructions for beginner and experienced cooks</li>
-        <li><strong>Diverse Cuisine:</strong> Explore recipes from different culinary traditions</li>
-        <li><strong>Quick Meals:</strong> Most recipes can be prepared in 30 minutes or less</li>
-        <li><strong>Family-Friendly:</strong> Dishes that everyone will enjoy</li>
-        <li><strong>Ingredient Focus:</strong> We use common, affordable ingredients</li>
-      </ul>
+    <!-- Introduction Statement (bold-italic) -->
+    <section class="about-intro">
+      <p class="intro-statement"><strong><em>Welcome to Home Foodie Hub — where simple ingredients meet delicious results. We help home cooks create memorable meals with easy-to-follow recipes and practical tips.</em></strong></p>
+    </section>
 
-      <h3>Our Story</h3>
+    <!-- Purpose Statement -->
+    <section class="about-purpose">
+      <h2>Our Purpose</h2>
       <p>
-        Founded in 2025, Food Recipes started as a passion project to share beloved family recipes 
-        and cooking tips. What began as a small collection has grown into a comprehensive resource 
-        for home cooks seeking inspiration and guidance in the kitchen.
+        Home Foodie Hub exists to make home cooking approachable and enjoyable for everyone. We collect and share tested, easy recipes, practical techniques,
+        and helpful guidance so visitors can confidently prepare tasty meals at home. Our goal is to inspire confidence, reduce mealtime stress, and
+        celebrate the joy of sharing food with family and friends.
       </p>
+    </section>
 
-      <h3>Get Started Today!</h3>
+    <!-- Author's Info -->
+    <section class="about-author">
+      <h2>About the Developer</h2>
       <p>
-        Browse our collection of recipes, find your next favorite dish, and don't hesitate to 
-        <a href="contact.html">contact us</a> with your feedback or recipe suggestions!
+        Hello — I'm Mark Angelo Samson Tadeo, a 21-year-old third-year BSIT student with a passion for web development and food. I enjoy building
+        clean, user-friendly websites and combining that skill with my interest in cooking to create helpful resources for home cooks. I focus on
+        readable code, responsive design, and simple interfaces that make it easy to find and follow recipes. I value clarity, accessibility, and
+        practical solutions that let visitors spend less time planning and more time enjoying good food.
       </p>
+    </section>
+
+  </main>
+
+  <!-- Footer (same as index.html) -->
+  <footer class="footer-section">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Home Foodie Hub</h3>
+        <p>Your destination for simple and delicious home-cooked recipes.</p>
+      </div>
+
+      <div class="footer-developer">
+        <h4>Web Developer</h4>
+        <p><strong>Mark Angelo S. Tadeo</strong></p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Information</h4>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:markangelotadeo@gmail.com">markangelotadeo@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+639858440089">+63 985 844 0089</a></p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/markangelosamson21" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <footer>
-    <p>Created by Mark Angelo Tadeo &copy; 2026</p>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Home Foodie Hub. All rights reserved. | Developed by Mark Angelo S. Tadeo</p>
+    </div>
   </footer>
 
   <script src="main.js"></script>
 </body>
-
 </html>
